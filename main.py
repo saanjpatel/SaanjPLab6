@@ -17,6 +17,21 @@ def encode(password):
         i = str(i)
         new_password += i
     return new_password
+# Soch A: Function for decoding password
+def decode(password):
+    # empty string
+    password_1 = ''
+    # for loop to change password
+    for i in password:
+        # change it into integer
+        i = int(i)
+        # subtract 3
+        i -= 3
+        # change back to string
+        i = str(i)
+        # add to new string
+        password_1 += i
+    return password_1
 if __name__ == '__main__':
     # creating condition and while loop
     encoding_decoding = True
