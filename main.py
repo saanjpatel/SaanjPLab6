@@ -6,7 +6,7 @@ def password_menu():
     print('1. Encode')
     print('2. Decode')
     print('3. Quit')
-# function to encode password
+# function to encode password by shifting each digit by 3
 def encode(password):
     # create an empty string for encoded password
     new_password = ''
@@ -33,7 +33,7 @@ if __name__ == '__main__':
         elif input_menu == 2:
             decode_password = decode(encode_password)
             print(f'The encoded password is {encode_password}, and the original password is {decode_password}.')
-        # if user inputs 3, make false and break
+        # if user inputs 3, make condition false and break
         elif input_menu == 3:
             encoding_decoding = False
             break
